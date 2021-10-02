@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Lastbotslrc7">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0063307 0.011404 -7.1446E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.089257" />
+      <inertia
+        ixx="8.9984E-05"
+        ixy="9.8359E-06"
+        ixz="2.9547E-07"
+        iyy="0.00019757"
+        iyz="-7.3502E-08"
+        izz="0.00012055" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Body">
+    <inertial>
+      <origin
+        xyz="0.0063307 0.011404 -7.1446E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.089257" />
+      <inertia
+        ixx="8.9984E-05"
+        ixy="9.8359E-06"
+        ixz="2.9547E-07"
+        iyy="0.00019757"
+        iyz="-7.3502E-08"
+        izz="0.00012055" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/Body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/Body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Body"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Body" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Battery">
+    <inertial>
+      <origin
+        xyz="0.0012512 0.011765 -0.00030378"
+        rpy="0 0 0" />
+      <mass
+        value="0.18108" />
+      <inertia
+        ixx="0.00017695"
+        ixy="2.3058E-05"
+        ixz="4.2028E-07"
+        iyy="0.0002939"
+        iyz="8.2665E-08"
+        izz="0.00024011" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/Battery.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/Battery.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Battery"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Battery" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Arduino">
+    <inertial>
+      <origin
+        xyz="-0.00069521 0.036076 -0.00095523"
+        rpy="0 0 0" />
+      <mass
+        value="0.01658" />
+      <inertia
+        ixx="4.6477E-06"
+        ixy="1.0516E-07"
+        ixz="3.5166E-08"
+        iyy="2.2436E-05"
+        iyz="3.2564E-08"
+        izz="1.8112E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/Arduino.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/Arduino.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Arduino"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Arduino" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="CasterBall">
+    <inertial>
+      <origin
+        xyz="-5.7196E-06 0.0013545 7.0189E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0007555" />
+      <inertia
+        ixx="1.0551E-08"
+        ixy="-1.3599E-11"
+        ixz="3.976E-11"
+        iyy="1.3964E-08"
+        iyz="1.7377E-10"
+        izz="9.9649E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/CasterBall.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/CasterBall.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="CasterBall"
+    type="fixed">
+    <origin
+      xyz="0.072312 -0.034316 8.4751E-05"
+      rpy="0 0.072469 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="CasterBall" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="WheelRight">
+    <inertial>
+      <origin
+        xyz="-0.00072984 3.9641E-05 -3.7936E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0056874" />
+      <inertia
+        ixx="5.1201E-06"
+        ixy="1.7698E-11"
+        ixz="-3.9013E-13"
+        iyy="2.5808E-06"
+        iyz="-1.9636E-12"
+        izz="2.581E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/WheelRight.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/WheelRight.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right wheel motor"
+    type="continuous">
+    <origin
+      xyz="0.000116 -0.0080441 0.040028"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="WheelRight" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="WheelLeft">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/WheelLeft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lastbotslrc7/meshes/WheelLeft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left wheel motor"
+    type="continuous">
+    <origin
+      xyz="0.0001078 -0.0080441 -0.0404"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="WheelLeft" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
